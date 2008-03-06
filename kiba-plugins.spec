@@ -10,8 +10,9 @@ URL:		http://www.kiba-dock.org/
 Source0:	%{name}-%{svn}.tar.lzma
 License:	GPLv2+
 BuildRoot:	%{_tmppath}/%{name}-root
-BuildRequires:	kiba-dock-devel
+BuildRequires:	kiba-dock-devel = %{version}
 BuildRequires:	intltool
+BuildRequires:	librsvg-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	libalsa-devel
 BuildRequires:	libgtop2.0-devel
