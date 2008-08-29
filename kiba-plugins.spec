@@ -2,7 +2,7 @@
 %define _disable_ld_as_needed 1
 
 %define svn	862
-%define release %mkrel 0.%{svn}.1
+%define release %mkrel 0.%{svn}.2
 
 Name:		kiba-plugins
 Version:	0.1
