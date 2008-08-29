@@ -20,6 +20,9 @@ BuildRequires:	gtk+2-devel
 BuildRequires:	libalsa-devel
 BuildRequires:	libgtop2.0-devel
 BuildRequires:	libgdk_pixbuf2.0-devel
+BuildRequires:	gnome-vfs2-devel
+BuildRequires:	gnomeui2-devel
+BuildRequires:	gnome-menus-devel
 BuildRequires:	startup-notification-devel
 Requires:	kiba-dock
 
@@ -33,8 +36,7 @@ and several other plugins.
 
 %build
 sh autogen.sh -V
-%configure2_5x --disable-trash --disable-gmenu --disable-stack
-# These use GnomeVFS so useless until ported to gvfs
+%configure2_5x
 %make
 
 %install
@@ -51,4 +53,4 @@ rm -rf %{buildroot}
 %{_libdir}/kiba-dock
 %{_datadir}/kiba-dock/config_schemas/*/*.xml
 %{_datadir}/kiba-dock/icons/*
-
+%{_datadir}/kiba-dock/ui/*
