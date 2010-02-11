@@ -1,8 +1,5 @@
-%define _disable_ld_no_undefined 1
-%define _disable_ld_as_needed 1
-
-%define svn	862
-%define release %mkrel 0.%{svn}.3
+%define svn	1218
+%define release %mkrel 0.%{svn}.1
 
 Name:		kiba-plugins
 Version:	0.1
@@ -10,7 +7,8 @@ Release:	%{release}
 Summary:	Various plugins for Kiba-Dock
 Group:		System/X11
 URL:		http://www.kiba-dock.org/
-Source0:	%{name}-%{svn}.tar.lzma
+Source0:	%{name}-%{svn}.tar.xz
+Patch0:		kiba-plugins-fix-str-fmt.patch
 License:	GPLv2+
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	kiba-dock-devel = %{version}
@@ -33,6 +31,7 @@ and several other plugins.
 
 %prep
 %setup -q -n %{name}
+%patch0 -p0
 
 %build
 sh autogen.sh -V
@@ -53,4 +52,3 @@ rm -rf %{buildroot}
 %{_libdir}/kiba-dock
 %{_datadir}/kiba-dock/config_schemas/*/*.xml
 %{_datadir}/kiba-dock/icons/*
-%{_datadir}/kiba-dock/ui/*
