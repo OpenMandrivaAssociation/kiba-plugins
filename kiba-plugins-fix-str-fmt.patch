@@ -1,0 +1,11 @@
+--- plugins/launcher/launcher-population.c.str	2010-02-11 10:49:19.000000000 +0100
++++ plugins/launcher/launcher-population.c	2010-02-11 10:49:30.000000000 +0100
+@@ -64,7 +64,7 @@
+ 	}
+ 	
+ 	// write to file
+-	fprintf (file, content);
++	fprintf (file, "%s", content);
+ 	g_free (content);
+ 	fclose (file);
+ 	
