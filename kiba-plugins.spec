@@ -12,11 +12,11 @@ Patch0:		kiba-plugins-fix-str-fmt.patch
 License:	GPLv2+
 BuildRequires:	kiba-dock-devel = %{version}
 BuildRequires:	intltool
-BuildRequires:	librsvg-devel
+BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	libalsa-devel
-BuildRequires:	libgtop2.0-devel
-BuildRequires:	libgdk_pixbuf2.0-devel
+BuildRequires:	pkgconfig(libgtop-2.0)
+BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	gnome-vfs2-devel
 BuildRequires:	pkgconfig(libgnomeui-2.0)
 BuildRequires:	gnome-menus-devel
