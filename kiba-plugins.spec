@@ -1,5 +1,5 @@
 %define svn	1218
-%define release 0.%{svn}.1
+%define release 0.%{svn}.2
 
 Name:		kiba-plugins
 Version:	0.1
@@ -14,7 +14,7 @@ BuildRequires:	kiba-dock-devel = %{version}
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(gtk+-2.0)
-BuildRequires:	libalsa-devel
+BuildRequires:	pkgconfig(alsaplayer)
 BuildRequires:	pkgconfig(libgtop-2.0)
 BuildRequires:	pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:	gnome-vfs2-devel
