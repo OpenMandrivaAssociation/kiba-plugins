@@ -6,7 +6,7 @@ Version:	0.1
 Release:	%{release}
 Summary:	Various plugins for Kiba-Dock
 Group:		System/X11
-URL:		http://www.kiba-dock.org/
+URL:		https://www.kiba-dock.org/
 Source0:	%{name}-%{svn}.tar.xz
 Patch0:		kiba-plugins-fix-str-fmt.patch
 License:	GPLv2+
