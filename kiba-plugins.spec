@@ -10,6 +10,11 @@ URL:		https://www.kiba-dock.org/
 Source0:	%{name}-%{svn}.tar.xz
 Patch0:		kiba-plugins-fix-str-fmt.patch
 License:	GPLv2+
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	kiba-dock-devel = %{version}
 BuildRequires:	intltool
 BuildRequires:	pkgconfig(librsvg-2.0)
